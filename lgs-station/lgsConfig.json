@@ -1,0 +1,16 @@
+{
+    "typeName": "gpii.lgs.LibraryStation",
+    "options": {
+        "gradeNames": ["fluid.littleComponent", "autoInit"],
+        "distributeOptions": [{
+            "record": "file:///Users/sgithens/shared_with_win7/code/library-gpii-system/lgs-station/lgs-personas/%userToken.json",
+            "target": "{that gpii.rawPreferencesServer}.options.rawPreferencesSourceUrl"
+        }]
+    },
+    "includes": [
+        "./node_modules/universal/gpii/configs/development.all.local.json"
+     ],
+    "modules": [
+
+    ]
+}
