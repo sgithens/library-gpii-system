@@ -3,8 +3,20 @@
     "options": {
         "gradeNames": ["fluid.littleComponent", "autoInit"],
         "distributeOptions": [{
-            "record": "file:///Users/sgithens/shared_with_win7/code/library-gpii-system/lgs-station/lgs-personas/%userToken.json",
+            "record": "file://./lgs-personas/%userToken.json",
             "target": "{that gpii.rawPreferencesServer}.options.rawPreferencesSourceUrl"
+        },
+        {
+            "record": "file://./lgs-solutions/%id.json",
+            "target": "{that gpii.solutionsRegistry}.options.solutionsRegistryUrl"
+        },
+        {
+            "record": "file://./lgs-solutions/%os.json",
+            "target": "{that gpii.solutionsRegistry}.options.solutionQueryUrl"
+        },
+        {
+            "record": "file://./lgs-solutions/installedSolutions.json",
+            "target": "{that gpii.deviceReporter}.options.installedSolutionsUrl"
         }]
     },
     "includes": [
