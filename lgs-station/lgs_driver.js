@@ -12,3 +12,11 @@ kettle.config.makeConfigLoader({
     configName: kettle.config.getNodeEnv("lgsConfig"),
     configPath: kettle.config.getConfigPath() || __dirname
 });
+
+// Start up the PMT
+
+var spawn = require("child_process").spawn;
+
+var pmtProcess = spawn("node", ["./prefsEditors/start.js"], {
+
+});
