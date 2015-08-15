@@ -17,6 +17,10 @@
         {
             "record": "file://./lgs-solutions/installedSolutions.json",
             "target": "{that gpii.deviceReporter}.options.installedSolutionsUrl"
+        },
+        {
+            "record": "file://./lgs-solutions/%os.json",
+            "target": "{that gpii.flowManager}.options.urls.solutionsRegistry"
         }]
     },
     "includes": [
