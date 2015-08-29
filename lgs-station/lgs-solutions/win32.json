@@ -16,7 +16,7 @@
           "start": [
             {
               "type": "gpii.launch.exec",
-              "command": "for /f \"usebackq tokens=2,3\" %i in (`\"%ProgramFiles(x86)%\\gpii\\winsetres.exe\"`) do echo ^\"^%ProgramFiles(x86)^%\\gpii\\winsetres.exe^\" %i %j > \"%TEMP%\\gpiidispsetres.bat\" & \"${{environment}.ProgramFiles(x86)}\\gpii\\winsetres.exe\" 1280 720"
+              "command": "for /f \"usebackq tokens=2,3\" %i in (`\"%ProgramFiles(x86)%\\gpii\\lgs-station\\winsetres.exe\"`) do echo ^\"^%ProgramFiles(x86)^%\\gpii\\lgs-station\\winsetres.exe^\" %i %j > \"%TEMP%\\gpiidispsetres.bat\" & \"${{environment}.ProgramFiles(x86)}\\gpii\\lgs-station\\winsetres.exe\" 1280 720"
             }
           ],
           "stop": [
